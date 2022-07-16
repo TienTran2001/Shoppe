@@ -1,0 +1,86 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  &__carousel {
+    width: calc(100% / 3 * 2 - 3px);
+    &-list {
+      list-style: none;
+      height: 235px;
+      &:hover .slick-next,
+      &:hover .slick-prev {
+        visibility: visible;
+        transition: all 0.4s linear;
+        opacity: 1;
+      }
+    }
+    &-item {
+      width: 797px;
+      height: 235px;
+      img {
+        width: 797px;
+        height: 235px;
+        object-fit: cover;
+        border-radius: $rounded-3;
+      }
+    }
+  }
+  &__right {
+    width: calc(100% / 3 - 2px);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem 0;
+    &-item {
+      height: 115px;
+      img {
+        border-radius: $rounded-3;
+        height: 115px;
+        width: 100%;
+      }
+    }
+  }
+
+  .slick-next,
+  .slick-prev {
+    opacity: 0;
+    transition: all 0.4s linear;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: $text-white;
+    z-index: 10;
+    font-size: 25px;
+    padding: 1.5rem 1rem;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.35);
+    }
+  }
+  .slick-prev {
+    border-radius: 0 2px 2px 0;
+  }
+  .slick-next {
+    border-radius: 2px 0px 0px 2px;
+    right: 0;
+  }
+  .slick-dots {
+    list-style: none;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 0 1rem;
+    transform: translateY(-3rem);
+    button {
+      font-size: 0;
+      background-color: hsl(0 0% 100%/ 0.4);
+      border: hsl(0 0% 54%/ 0.8);
+      border-radius: 100rem;
+      width: 1rem;
+      height: 1rem;
+    }
+    .slick-active button {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  }
+}

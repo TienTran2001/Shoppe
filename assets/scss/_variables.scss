@@ -1,0 +1,17 @@
+// color
+$text-white: #fff;
+$text-black: #000;
+$btn-color: #fb5533;
+$background-header: linear-gradient(-180deg, #f53d2d, #f63);
+// font size
+$font-12: 1.2rem;
+$font-13: 1.3rem;
+$font-14: 1.4rem;
+// border
+$rounded-2: 0.2rem;
+$rounded-3: 0.3rem;
+$shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+//
+@function animateName($name) {
+  @return $name 0.15s linear;
+}
