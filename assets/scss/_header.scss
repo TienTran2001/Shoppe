@@ -199,7 +199,7 @@
     }
   }
   &__search {
-    width: 80%;
+    width: 85%;
     &-inner {
       box-shadow: $shadow;
       border-radius: $rounded-2;
@@ -216,7 +216,7 @@
       height: 34px;
       display: flex;
       justify-content: center;
-      padding: 0 15px;
+      padding: 0 20px;
       font-size: 1.8rem;
       cursor: pointer;
       align-items: center;
@@ -225,7 +225,7 @@
     }
   }
   &__cart {
-    width: 20%;
+    width: 15%;
     display: flex;
     justify-content: center;
     align-items: center;

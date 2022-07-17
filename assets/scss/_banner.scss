@@ -1,6 +1,8 @@
 .banner {
-  display: flex;
-  justify-content: space-between;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
   &__carousel {
     width: calc(100% / 3 * 2 - 3px);
     &-list {
@@ -81,6 +83,43 @@
     }
     .slick-active button {
       background-color: rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+// banner bottom
+.banner {
+  &__bottom {
+    &-list {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+    }
+    &-item {
+      width: calc(100% / 8);
+      padding: 2rem 0;
+      transition: animateName(transform);
+      &:hover {
+        transition: animateName(all);
+        transform: translateY(-0.2rem);
+      }
+      a {
+        color: $text-black;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px 0;
+        font-size: $font-13;
+        span {
+          text-align: center;
+        }
+      }
+      img {
+        width: 45px;
+        height: 45px;
+      }
     }
   }
 }
