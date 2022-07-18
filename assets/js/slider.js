@@ -10,3 +10,13 @@ $(".banner__carousel-list").slick({
   nextArrow:
     "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
 });
+$(".category__list").slick({
+  slidesToShow: 10,
+  slidesToScroll: 3,
+  infinite: false,
+
+  prevArrow:
+    "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+  nextArrow:
+    "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+});
