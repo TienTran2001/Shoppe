@@ -20,3 +20,13 @@ $(".category__list").slick({
   nextArrow:
     "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
 });
+//slider flash sale
+$(".flash-sale__list").slick({
+  slidesToShow: 6,
+  slidesToScroll: 6,
+  infinite: false,
+  prevArrow:
+    "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+  nextArrow:
+    "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+});
