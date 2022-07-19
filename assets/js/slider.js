@@ -30,3 +30,28 @@ $(".flash-sale__list").slick({
   nextArrow:
     "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
 });
+
+// slider shop mail left
+$(".shop-mail__ad").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  infinite: true,
+  autoplaySpeed: 1600,
+  dots: true,
+  prevArrow:
+    "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+  nextArrow:
+    "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+});
+
+// slider shop mail right
+$(".shop-mail__promotion").slick({
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  infinite: false,
+  prevArrow:
+    "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+  nextArrow:
+    "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+});

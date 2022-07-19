@@ -34,6 +34,59 @@ main {
 }
 
 // slide
+.slider-1 {
+  .slick-next,
+  .slick-prev {
+    opacity: 0;
+    transition: all 0.4s linear;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: $text-white;
+    z-index: 10;
+    font-size: 25px;
+    padding: 1.5rem 1rem;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.35);
+    }
+  }
+  .slick-prev {
+    border-radius: 0 2px 2px 0;
+  }
+  .slick-next {
+    border-radius: 2px 0px 0px 2px;
+    right: 0;
+  }
+  .slick-dots {
+    list-style: none;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 0 1rem;
+    transform: translateY(-3rem);
+    button {
+      font-size: 0;
+      background-color: hsl(0 0% 100%/ 0.4);
+      border: hsl(0 0% 54%/ 0.8);
+      border-radius: 100rem;
+      width: 1rem;
+      height: 1rem;
+    }
+    .slick-active button {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  }
+  //  gán vào item
+  // &:hover .slick-next,
+  // &:hover .slick-prev {
+  //   visibility: visible;
+  //   transition: all 0.4s linear;
+  //   opacity: 1;
+  // }
+}
 .slider-2 {
   .slick-next,
   .slick-prev {
@@ -74,15 +127,16 @@ main {
 .image-product {
   width: 100%;
   height: 100%;
-  background: url("../images/flash-sale/fl1.png") top center / contain no-repeat;
+  // background: url("../images/flash-sale/fl1.png") top center / contain no-repeat;
   z-index: 99;
   position: absolute;
+  object-fit: contain;
 }
 .image-ad {
   position: absolute;
-  background: url("../images/flash-sale/flb1.png") top center / contain
-    no-repeat;
+
   z-index: 100;
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }

@@ -88,6 +88,52 @@ main {
   margin-top: 2rem;
 }
 
+.slider-1 .slick-next,
+.slider-1 .slick-prev {
+  opacity: 0;
+  transition: all 0.4s linear;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  z-index: 10;
+  font-size: 25px;
+  padding: 1.5rem 1rem;
+  cursor: pointer;
+}
+.slider-1 .slick-next:hover,
+.slider-1 .slick-prev:hover {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.slider-1 .slick-prev {
+  border-radius: 0 2px 2px 0;
+}
+.slider-1 .slick-next {
+  border-radius: 2px 0px 0px 2px;
+  right: 0;
+}
+.slider-1 .slick-dots {
+  list-style: none;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0 1rem;
+  transform: translateY(-3rem);
+}
+.slider-1 .slick-dots button {
+  font-size: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: rgba(138, 138, 138, 0.8);
+  border-radius: 100rem;
+  width: 1rem;
+  height: 1rem;
+}
+.slider-1 .slick-dots .slick-active button {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 .slider-2 .slick-next,
 .slider-2 .slick-prev {
   opacity: 1;
@@ -119,17 +165,17 @@ main {
 .image-product {
   width: 100%;
   height: 100%;
-  background: url("../images/flash-sale/fl1.png") top center/contain no-repeat;
   z-index: 99;
   position: absolute;
+  object-fit: contain;
 }
 
 .image-ad {
   position: absolute;
-  background: url("../images/flash-sale/flb1.png") top center/contain no-repeat;
   z-index: 100;
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 
 .header {
@@ -478,32 +524,6 @@ main {
 .banner .slick-prev:hover {
   background-color: rgba(0, 0, 0, 0.35);
 }
-.banner .slick-prev {
-  border-radius: 0 2px 2px 0;
-}
-.banner .slick-next {
-  border-radius: 2px 0px 0px 2px;
-  right: 0;
-}
-.banner .slick-dots {
-  list-style: none;
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  gap: 0 1rem;
-  transform: translateY(-3rem);
-}
-.banner .slick-dots button {
-  font-size: 0;
-  background-color: rgba(255, 255, 255, 0.4);
-  border: rgba(138, 138, 138, 0.8);
-  border-radius: 100rem;
-  width: 1rem;
-  height: 1rem;
-}
-.banner .slick-dots .slick-active button {
-  background-color: rgba(0, 0, 0, 0.4);
-}
 
 .banner__bottom-list {
   list-style: none;
@@ -721,6 +741,114 @@ main {
   border-style: solid;
   border-color: #ffd424 #ffd424 transparent #ffd424;
   z-index: 9998;
+}
+
+.shop-mail {
+  background-color: #fff;
+}
+.shop-mail__header {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f5f5f5;
+}
+.shop-mail__header-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #d0011b;
+}
+.shop-mail__header-left, .shop-mail__header-mail, .shop-mail__header-mail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shop-mail__header-mail {
+  padding-left: 1.5rem;
+  gap: 0 15px;
+  font-size: 16px;
+  color: #333333;
+  margin-left: 1.5rem;
+}
+.shop-mail__header-mail-item img {
+  height: 17px;
+  width: 17px;
+  margin-right: 5px;
+}
+.shop-mail__header-right a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #d0011b;
+}
+.shop-mail__header-right a i {
+  font-size: 18px;
+  margin-left: 5px;
+  transform: translateY(-1px);
+}
+.shop-mail__separation {
+  position: relative;
+}
+.shop-mail__separation::after {
+  position: absolute;
+  left: -1.5rem;
+  content: "";
+  height: 1.9rem;
+  border: 1px solid rgba(251, 84, 51, 0.3);
+}
+
+.shop-mail__slider {
+  display: flex;
+}
+.shop-mail__ad {
+  padding: 1rem 0 0 1rem;
+  width: 400px;
+  height: 472px;
+}
+.shop-mail__ad-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.shop-mail__ad:hover .slick-next, .shop-mail__ad:hover .slick-prev {
+  visibility: visible;
+  transition: all 0.4s linear;
+  opacity: 1;
+}
+.shop-mail__promotion {
+  width: 80rem;
+}
+.shop-mail__promotion .promotion-group__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 236px;
+  padding: 1rem;
+}
+.shop-mail__promotion .promotion-group__item a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #d0011b;
+}
+.shop-mail__promotion .promotion-group__item a i {
+  font-size: 20px;
+  margin-left: 5px;
+  transform: translateY(1px);
+}
+.shop-mail__promotion .promotion-group__item img {
+  width: 100%;
+  object-fit: contain;
+}
+.shop-mail__promotion .promotion-group__item span {
+  display: inline-block;
+  font-size: 16px;
+  transform: translateY(-30px);
+}
+.shop-mail__promotion:hover .slick-next, .shop-mail__promotion:hover .slick-prev {
+  font-size: 25px;
+  padding: 0.5rem 1.7rem;
 }
 
 /*# sourceMappingURL=app.css.map */
