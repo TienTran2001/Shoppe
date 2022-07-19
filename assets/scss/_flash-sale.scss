@@ -2,23 +2,10 @@
   background-color: #fff;
   &__header {
     padding: 1.3rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
     &-left {
       display: flex;
       align-items: center;
       gap: 0 2rem;
-    }
-    &-right {
-      a {
-        color: $orange-light;
-        font-size: $font-14;
-        text-decoration: none;
-        font-weight: 400;
-        padding: 5px 7px;
-      }
     }
   }
   &__img {

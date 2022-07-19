@@ -140,3 +140,44 @@ main {
   height: 100%;
   object-fit: contain;
 }
+// top-section
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__left {
+    font-size: $font-18;
+    text-transform: uppercase;
+  }
+  &__right {
+    a {
+      font-size: $font-14;
+      text-decoration: none;
+      font-weight: 400;
+      padding: 5px 7px;
+      i {
+        transform: translateY(1px);
+      }
+    }
+  }
+}
+
+.text-gray {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.text-orange-light {
+  color: $orange-light;
+}
+
+.text-orange-bold {
+  color: $orange-bold;
+}
+
+.mr-2 {
+  margin-right: 2px;
+}
+
+.p-20 {
+  padding: 2rem;
+}

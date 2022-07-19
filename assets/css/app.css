@@ -178,6 +178,45 @@ main {
   object-fit: contain;
 }
 
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-section__left {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.top-section__right a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 5px 7px;
+}
+.top-section__right a i {
+  transform: translateY(1px);
+}
+
+.text-gray {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.text-orange-light {
+  color: #ee4d2d;
+}
+
+.text-orange-bold {
+  color: #d0011b;
+}
+
+.mr-2 {
+  margin-right: 2px;
+}
+
+.p-20 {
+  padding: 2rem;
+}
+
 .header {
   z-index: 9999;
   position: fixed;
@@ -565,9 +604,7 @@ main {
 
 .categories__top {
   background-color: #fff;
-  padding: 2rem;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.54);
 }
 .categories__top h2 {
   font-size: 18px;
@@ -623,21 +660,11 @@ main {
 }
 .flash-sale__header {
   padding: 1.3rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 .flash-sale__header-left {
   display: flex;
   align-items: center;
   gap: 0 2rem;
-}
-.flash-sale__header-right a {
-  color: #ee4d2d;
-  font-size: 1.4rem;
-  text-decoration: none;
-  font-weight: 400;
-  padding: 5px 7px;
 }
 .flash-sale__img {
   width: 13rem;
@@ -747,17 +774,10 @@ main {
   background-color: #fff;
 }
 .shop-mail__header {
-  padding: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-bottom: 2px solid #f5f5f5;
 }
 .shop-mail__header-title {
-  font-size: 18px;
-  text-transform: uppercase;
   text-decoration: none;
-  color: #d0011b;
 }
 .shop-mail__header-left, .shop-mail__header-mail, .shop-mail__header-mail-item {
   display: flex;
@@ -775,11 +795,6 @@ main {
   height: 17px;
   width: 17px;
   margin-right: 5px;
-}
-.shop-mail__header-right a {
-  text-decoration: none;
-  font-size: 1.4rem;
-  color: #d0011b;
 }
 .shop-mail__header-right a i {
   font-size: 18px;
@@ -849,6 +864,46 @@ main {
 .shop-mail__promotion:hover .slick-next, .shop-mail__promotion:hover .slick-prev {
   font-size: 25px;
   padding: 0.5rem 1.7rem;
+}
+
+.search-trends {
+  background-color: #fff;
+}
+
+.search-trends__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-trends__item {
+  width: calc(100% / 5);
+  border: 1px solid #f5f5f5;
+}
+.search-trends__link {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  padding-right: 1rem;
+}
+.search-trends__info {
+  padding: 2rem 1rem 2rem 2rem;
+}
+.search-trends__info-name {
+  font-size: 1.4rem;
+  color: #222222;
+}
+.search-trends__info-amount {
+  color: #757575;
+  font-size: 1.3rem;
+}
+.search-trends__img {
+  width: 99.56px;
+  height: 99.56px;
+  object-fit: contain;
+}
+
+.top-search {
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=app.css.map */
