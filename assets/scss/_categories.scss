@@ -48,13 +48,6 @@
       }
       &-name {
         margin: 0 0.5rem 1rem;
-        // text-truncate
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        word-break: break-word;
         // word-break: break-all;
       }
     }
