@@ -125,17 +125,15 @@ main {
 
 // image
 .image-product {
-  width: 100%;
-  height: 100%;
-  // background: url("../images/flash-sale/fl1.png") top center / contain no-repeat;
-  z-index: 99;
-  position: absolute;
-  object-fit: contain;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
 .image-ad {
   position: absolute;
-
-  z-index: 100;
+  top: 0;
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -190,4 +188,86 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-word;
+}
+
+// discount
+.discount {
+  position: absolute;
+  top: 0;
+  right: 4px;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 16px;
+  &__percent,
+  span {
+    z-index: 10;
+  }
+  &__percent {
+    color: $orange-light;
+
+    padding-top: 3px;
+  }
+  span {
+    color: $text-white;
+    text-transform: uppercase;
+  }
+}
+
+.discount-draw-lager {
+  font-size: 16px;
+  &__percent,
+  span {
+    line-height: 20px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    border-width: 43px 25px 6px 25px;
+    border-style: solid;
+    border-color: $yellow $yellow transparent $yellow;
+    z-index: 9;
+  }
+}
+.discount-draw-small {
+  font-size: $font-12;
+  &__percent,
+  span {
+    line-height: 10px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    border-width: 35px 20px 6px 20px;
+    border-style: solid;
+    border-color: $yellow $yellow transparent $yellow;
+    z-index: 9;
+  }
+}
+
+// favourite
+.favourite {
+  position: absolute;
+  top: 10px;
+  left: -4px;
+  padding: 0 5px;
+  color: $orange;
+  background-color: currentColor;
+  z-index: 9;
+  border-radius: 0px 2px 2px 0;
+  span {
+    color: $text-white;
+    font-size: $font-12;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 0;
+    filter: brightness(60%);
+    border-top: 4px solid currentColor;
+    border-left: 4px solid transparent;
+  }
 }
