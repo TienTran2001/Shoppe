@@ -271,3 +271,14 @@ main {
     border-left: 4px solid transparent;
   }
 }
+
+.separation {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 15px;
+    border-right: 1px solid;
+    border-right-color: rgba(0, 0, 0, 0.2);
+  }
+}
