@@ -1,3 +1,19 @@
+// slider banner bottom mobile
+$(".banner__bottom-list").slick({
+  slidesToShow: 8,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 4.5,
+        slidesToScroll: 2,
+        infinite: false,
+        // dots: true,
+      },
+    },
+  ],
+});
+
 $(".banner__carousel-list").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -10,6 +26,8 @@ $(".banner__carousel-list").slick({
   nextArrow:
     "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
 });
+
+// danh muc
 $(".category__list").slick({
   slidesToShow: 10,
   slidesToScroll: 3,
@@ -19,6 +37,17 @@ $(".category__list").slick({
     "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
   nextArrow:
     "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3.5,
+        slidesToScroll: 3,
+        infinite: false,
+        // dots: true,
+      },
+    },
+  ],
 });
 //slider flash sale
 $(".flash-sale__list").slick({
@@ -29,6 +58,17 @@ $(".flash-sale__list").slick({
     "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
   nextArrow:
     "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2.5,
+        slidesToScroll: 2,
+        infinite: false,
+        // dots: true,
+      },
+    },
+  ],
 });
 
 // slider shop mail left slide 1
@@ -54,8 +94,34 @@ $(".shop-mail__promotion").slick({
     "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
   nextArrow:
     "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2.5,
+        slidesToScroll: 2,
+        infinite: false,
+        // dots: true,
+      },
+    },
+  ],
 });
-
+// search trend
+$(".search-trends__list").slick({
+  slidesToShow: 4,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1.5,
+        slidesToScroll: 1,
+        infinite: false,
+        // dots: true,
+      },
+    },
+  ],
+});
+// top search
 $(".top-search__list").slick({
   slidesToShow: 6,
   slidesToScroll: 6,
@@ -64,4 +130,15 @@ $(".top-search__list").slick({
     "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
   nextArrow:
     "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2.5,
+        slidesToScroll: 2,
+        infinite: false,
+        // dots: true,
+      },
+    },
+  ],
 });
