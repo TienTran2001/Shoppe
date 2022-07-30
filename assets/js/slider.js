@@ -3,6 +3,15 @@ $(".banner__bottom-list").slick({
   slidesToShow: 8,
   responsive: [
     {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 6.5,
+        slidesToScroll: 2,
+        infinite: false,
+        // dots: true,
+      },
+    },
+    {
       breakpoint: 768,
       settings: {
         slidesToShow: 4.5,
@@ -39,6 +48,15 @@ $(".category__list").slick({
     "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
   responsive: [
     {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 6.5,
+        slidesToScroll: 3,
+        infinite: false,
+        // dots: true,
+      },
+    },
+    {
       breakpoint: 768,
       settings: {
         slidesToShow: 3.5,
@@ -59,6 +77,15 @@ $(".flash-sale__list").slick({
   nextArrow:
     "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
   responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4.5,
+        slidesToScroll: 2,
+        infinite: false,
+        // dots: true,
+      },
+    },
     {
       breakpoint: 768,
       settings: {
@@ -96,6 +123,15 @@ $(".shop-mail__promotion").slick({
     "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
   responsive: [
     {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2.5,
+        slidesToScroll: 4,
+        infinite: false,
+        // dots: true,
+      },
+    },
+    {
       breakpoint: 768,
       settings: {
         slidesToShow: 2.5,
@@ -131,6 +167,15 @@ $(".top-search__list").slick({
   nextArrow:
     "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
   responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4.5,
+        slidesToScroll: 2,
+        infinite: false,
+        // dots: true,
+      },
+    },
     {
       breakpoint: 768,
       settings: {
