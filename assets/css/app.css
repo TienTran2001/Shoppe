@@ -311,6 +311,15 @@ main {
   border-right-color: rgba(0, 0, 0, 0.2);
 }
 
+.model.active,
+.layer.active {
+  display: none;
+}
+
+.model-ad.active {
+  display: block;
+}
+
 .header {
   z-index: 9999;
   position: fixed;
@@ -1452,6 +1461,7 @@ main {
   .shop-mail .shop-mail__ad {
     width: 100%;
     height: auto;
+    padding: 0;
   }
   .shop-mail .shop-mail__promotion {
     width: 100%;
@@ -1482,6 +1492,60 @@ main {
 
   .mt-20 {
     margin-top: 10px;
+  }
+}
+.model {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  cursor: pointer;
+}
+.model img {
+  width: 45rem;
+}
+.model-close {
+  position: absolute;
+  top: 0;
+  right: -2rem;
+  font-size: 35px;
+  color: #fff;
+}
+
+.layer {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99998;
+  cursor: pointer;
+}
+
+.model-ad {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 99997;
+  cursor: pointer;
+}
+.model-ad img {
+  width: 8rem;
+}
+.model-ad-close {
+  position: absolute;
+  top: 0;
+  right: -1rem;
+  font-size: 2rem;
+  color: #d0011b;
+}
+
+@media (max-width: 740px) {
+  .model {
+    width: 30rem;
   }
 }
 

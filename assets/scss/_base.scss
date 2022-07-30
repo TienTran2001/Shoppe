@@ -281,3 +281,11 @@ main {
     border-right-color: rgba(0, 0, 0, 0.2);
   }
 }
+
+.model.active,
+.layer.active {
+  display: none;
+}
+.model-ad.active {
+  display: block;
+}
